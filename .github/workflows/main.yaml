@@ -12,6 +12,9 @@ jobs:
         run: |
           npm -v
           node -v
+          npm i pnpm -g
+          pnpm i
+          pnpm run build
           # npm run build
 
       - name: Deploy 🚀
