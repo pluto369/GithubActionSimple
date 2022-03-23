@@ -1,6 +1,7 @@
 import { useState, useEffect, version } from "react";
 import { Button, Tag, message } from "antd";
 import styled from "styled-components";
+import Map from "./Map";
 
 function App() {
   const info = () => {
@@ -15,6 +16,7 @@ function App() {
       <Button type="dashed" onClick={info}>
         Display normal message
       </Button>
+      <Map />
     </>
   );
 }
