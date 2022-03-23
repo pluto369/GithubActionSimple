@@ -15,7 +15,6 @@ function App() {
       <Button type="dashed" onClick={info}>
         Display normal message
       </Button>
-      ,
     </>
   );
 }

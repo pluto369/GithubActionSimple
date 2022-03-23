@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@vitejs/plugin-react': ^1.2.0
   antd: ^4.19.3
+  maptalks: ^1.0.0-rc.2
   react: ^18.0.0-rc.3
   react-dom: ^18.0.0-rc.3
   react-is: ^17.0.2
@@ -11,6 +12,7 @@ specifiers:
 
 dependencies:
   antd: 4.19.3_581fa33d3647c30d8078674dcd1b240a
+  maptalks: 1.0.0-rc.2
   react: 18.0.0-rc.3
   react-dom: 18.0.0-rc.3_react@18.0.0-rc.3
   react-is: 17.0.2
@@ -378,6 +380,14 @@ packages:
       '@jridgewell/resolve-uri': 3.0.5
       '@jridgewell/sourcemap-codec': 1.4.11
     dev: true
+
+  /@maptalks/feature-filter/1.0.0:
+    resolution: {integrity: sha512-JbEOtPGRrT6R8K4zFPEBUtcXNIzdVliK/X9OTmFt4GhEZU79TgnwElCb68GAcC+5c0TAHgY73KBdZPb6M9yaTg==}
+    dev: false
+
+  /@maptalks/function-type/1.2.3:
+    resolution: {integrity: sha512-q6i14qss+Y1bv5VzIvDFrsOGvWCih2p6LS2NcfgU7VrnjAlCRW1D6iVGDW2N9XCuJsXwg/9QJsTrqEIz6T7eUg==}
+    dev: false
 
   /@rollup/pluginutils/4.2.0:
     resolution: {integrity: sha512-2WUyJNRkyH5p487pGnn4tWAsxhEFKN/pT8CMgHshd5H+IXkOnKvKZwsz5ZWz+YCXkleZRAU5kwbfgF8CPfDRqA==}
@@ -819,6 +829,10 @@ packages:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
     dev: true
 
+  /frustum-intersects/0.1.0:
+    resolution: {integrity: sha512-W0S6dmX5LJLtamimyuKhvbkpDTm5eVfMgk4X9yXNyWQ1zZ/cMm0PZoeX9Pm0tL302l+erQVrdfRGhV3ILfeTeQ==}
+    dev: false
+
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -894,6 +908,17 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
+  /maptalks/1.0.0-rc.2:
+    resolution: {integrity: sha512-r2XJfXQOQp4hzkjIKHbAOE3Xa0yzEL+wha+lyyzB5q7zaKE2SNn7WM/Tgw6mfjWkvZ3FGjoot5UGL9/TmFOwwg==}
+    dependencies:
+      '@maptalks/feature-filter': 1.0.0
+      '@maptalks/function-type': 1.2.3
+      frustum-intersects: 0.1.0
+      rbush: 2.0.2
+      simplify-js: 1.2.4
+      zousan: 2.5.1
+    dev: false
+
   /memoize-one/6.0.0:
     resolution: {integrity: sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw==}
     dev: false
@@ -939,6 +964,16 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
+
+  /quickselect/1.1.1:
+    resolution: {integrity: sha512-qN0Gqdw4c4KGPsBOQafj6yj/PA6c/L63f6CaZ/DCF/xF4Esu3jVmKLUDYxghFx8Kb/O7y9tI7x2RjTSXwdK1iQ==}
+    dev: false
+
+  /rbush/2.0.2:
+    resolution: {integrity: sha512-XBOuALcTm+O/H8G90b6pzu6nX6v2zCKiFG4BJho8a+bY6AER6t8uQUZdi5bomQc0AprCWhEGa7ncAbbRap0bRA==}
+    dependencies:
+      quickselect: 1.1.1
+    dev: false
 
   /rc-align/4.0.11_581fa33d3647c30d8078674dcd1b240a:
     resolution: {integrity: sha512-n9mQfIYQbbNTbefyQnRHZPWuTEwG1rY4a9yKlIWHSTbgwI+XUMGRYd0uJ5pE2UbrNX0WvnMBA1zJ3Lrecpra/A==}
@@ -1529,6 +1564,10 @@ packages:
     resolution: {integrity: sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==}
     dev: false
 
+  /simplify-js/1.2.4:
+    resolution: {integrity: sha512-vITfSlwt7h/oyrU42R83mtzFpwYk3+mkH9bOHqq/Qw6n8rtR7aE3NZQ5fbcyCUVVmuMJR6ynsAhOfK2qoah8Jg==}
+    dev: false
+
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -1607,3 +1646,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /zousan/2.5.1:
+    resolution: {integrity: sha512-ZER+1EJNPHs9G3I6kTqhTmeqPjdU8XoaSIFzaUcSWmxcZBeXMuf5LM6Ih8LLNlQ46wg2Au+3ayn7KgjklVnOfA==}
+    dev: false
