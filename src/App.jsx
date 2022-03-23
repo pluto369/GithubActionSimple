@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <h1>Github Action Simple:{version}</h1>
-      <Button>Antd测试</Button>
-      <Tag>Antd测试</Tag>
+      <Button type="primary">Antd测试</Button>
+      <Tag  color="orange">Antd测试</Tag>
     </>
   );
 }
